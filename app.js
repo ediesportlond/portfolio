@@ -10,7 +10,7 @@ function centerJobTitle() {
 	let titleHeight = $('#jobTitle').css('height');
 	titleHeight = parseInt(titleHeight.replace(/px/g, ''));
 
-	let adjustment = (navHeight + vidHeight) / 2 - titleHeight / 2;
+	const adjustment = (navHeight + vidHeight) / 2 - titleHeight / 2;
 
 	$('.banner').css({ top: adjustment, opacity: 1 });
 }
@@ -22,27 +22,24 @@ $(window).on('scroll', centerJobTitle);
 $(window).resize(centerJobTitle);
 
 $(window).on('scroll', function () {
-	let y_scroll_pos = window.pageYOffset;
-	let targetDiv = document.getElementById("cards").offsetTop - 500;
+	const y_scroll_pos = window.pageYOffset;
+	const targetDiv = document.getElementById("cards").offsetTop - 500;
 	if (y_scroll_pos > targetDiv) {
 		$(".fadeUp").animate({ top: "0px", opacity: "1" }, 2000);
 	}
 });
 
 $(window).on('scroll', function () {
-	let y_scroll_pos = window.pageYOffset;
-	let targetDiv = document.getElementById("0").offsetTop - 500;
+	const y_scroll_pos = window.pageYOffset;
+	const targetDiv = document.getElementById("0").offsetTop - 500;
 	if (y_scroll_pos > targetDiv) {
-
 		$("#0").animate({ left: '0px', opacity: "1" }, 2000);
-
-
 	}
 });
 
 $(window).on('scroll', function () {
-	let y_scroll_pos = window.pageYOffset;
-	let targetDivB = document.getElementById("2").offsetTop - 750;
+	const y_scroll_pos = window.pageYOffset;
+	const targetDivB = document.getElementById("2").offsetTop - 750;
 	if (y_scroll_pos > targetDivB) {
 		$(".fadeLeft").animate({ left: "0px", opacity: "1" }, 2000);
 	}
