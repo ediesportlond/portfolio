@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="styles.css">
+    <title>Eddie Espinosa</title>
+</head>
+
+<body>
+
+    <!-- NAVIGATION BAR-->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Eddie</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#aboutMe">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cards">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#2">Skills</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- BACKGROUND VIDEO 1-->
+
+    <video class='img-fluid' autoplay muted loop>
+        <source src='\img\Comp_8.mp4' type='video/mp4'>
+    </video>
+
+    <!--BANNER-->
+    <div class='banner'>
+        <h1 id='jobTitle'>Software Engineer</h1>
+        <div id='jobFunctions'>
+            <marquee direction="scroll" style='width: 33%'>Full Stack - Cloud Architecture - Front End - Version Control
+                - Back End</marquee>
+        </div>
+    </div>
+    <!--ABOUT ME-->
+    <div class="row fadeRight centerCards" id="0">
+        <div class="col-lg-8">
+            <h2 class='display-3' id='aboutMe'>About Me </h2>
+            <p class="lead">I'm a 7 year veteran of the mortgage industry with a passion for techonology. While working
+                a full time job with
+                demanding nights and weekends I began teaching myself to code. It started with a Udemy course to learn
+                the basics and my first stack (Bootstrap/jQuery + PHP/MySQL). This allowed me to build my first few
+                projects, Some of which I showcase here.</p>
+            <p class="lead">The more I dove into it, the more I realized this is something I enjoyed. After a couple of
+                years of dipping my toes in the water I decided to commit 100% and pursue additional training. This is
+                the career path for me!</p>
+            <p class='lead'>I'm currently enrolled in the October cohort for the Boca Code Career Course. Upon
+                graduation in December of 2022 my search for full time employment will begin.</p>
+        </div>
+        <div class="col-lg-4">
+            <div style='max-width: 300px; margin-right:auto; margin-left:auto'>
+                <img class='img-responsive rounded' style='max-width: 300px' src="\img\IMG_0785.jpg"
+                    alt="Generic placeholder image">
+            </div>
+        </div>
+    </div>
+    <hr class="featurette-divider">
+    <!-- CARDS-->
+    <div>
+        <h1 class='fadeUp display-3' id='cards' style='text-align:center; margin-bottom: 15px'>Projects</h1>
+        <div class='centerCards'>
+
+            <div class="text-center fadeUp cards">
+                <img src="\img\crm.png" style="max-width: 250px">
+                <h3 class='card-link'>Job Seekers CRM</h3>
+                <button id='crmLink' class='btn btn-outline-secondary btn-sm'>Demo</button>
+                <a href='http://itseddies.com/crm' style='text-decoration:none' target='_blank'><button
+                        class='btn btn-outline-secondary btn-sm'>Visit site</button></a>
+                <p> CRM to help job applicants stay organized. Track applications, interviews and resume versions for
+                    performance. Message me if you'd like credentials for demo account.</p>
+                <p> Languages used: PHP/MySQL, Bootstrap 5, jQuery</p>
+            </div>
+
+            <div class="text-center fadeUp cards">
+                <img src="\img\portfolio thumbnail.png" style="max-width: 250px">
+                <h3 class='card-link'>Portfolio</h3>
+                <button id='portLink' class='btn btn-outline-secondary btn-sm'>Demo</button>
+                <p> This site was built to showcase my projects. Built wiht bootstrap along with custom animations and
+                    formating.</p>
+                <p> Languages used: Bootstrap 5, jQuery</p>
+            </div>
+
+            <div class="text-center fadeUp cards">
+                <img src="\img\bbc.png" style="; max-width: 250px">
+                <h3 class='card-link'>News Clone</h3>
+                <button id='bbcLink' class='btn btn-outline-secondary btn-sm'>Demo</button>
+                <p>Clone of BBC site to showcase CSS dexterity. An early project of mine.</p>
+            </div>
+
+            <div class="text-center fadeUp cards">
+                <img src="\img\8bit.png" style=" max-width: 250px">
+                <h3 class='card-link'>Pixel Art</h3>
+                <button id='pixelLink' class='btn btn-outline-secondary btn-sm'>Demo</button>
+                <p>Pixel art maker made with Javascript. Make your own 8 bit characters by chosing a color and clicking
+                    on the squares.</p>
+            </div>
+
+            <div class="text-center fadeUp cards">
+                <img src="\img\reaction thumbnail.png" style="max-width: 250px">
+                <h3 class='card-link'>Reaction Timer</h3>
+                <button id='reactionLink' class='btn btn-outline-secondary btn-sm'>Demo</button>
+                <p>Simple JS game. Test your reaction speed by clicking on shapes as they appear. One of my first
+                    JavaScript projects.</p>
+            </div>
+        </div>
+    </div>
+
+    <!--COVER-->
+    <div id='cover'></div>
+    <button id='close' type="button" class="btn-close btn-close-white" aria-label="Close"></button>
+    <iframe src="" height="500" width="600" title="Portfolio Page" style='display: none'></iframe>
+
+    <!--SKILLS-->
+
+    <div class="fadeLeft" id="2">
+        <div id='canvasImg'>
+            <div id='skillCanvas'>
+
+                <!--SKILLS TITLE-->
+                <div>
+                    <div>
+                        <h1 class="fadeLeft display-3" style='text-align:center'>Skills</h1>
+                    </div>
+                </div>
+
+                <!--LOGOS-->
+                <div class='skillRow'>
+                    <div class='skillIcon'>
+                        <img class="img-fluid" style='max-width: 100px' src="\logos\git.png" alt="GIT">
+                    </div>
+
+                    <div class='skillIcon'>
+                        <img class="img-fluid" style='max-height: 95px' src="\logos\javascript.svg" alt="JS">
+                    </div>
+
+                    <div class='skillIcon'>
+                        <img class="img-fluid" style='max-height: 100px' src="\logos\html.svg" alt="HTML">
+                    </div>
+
+                    <div class='skillIcon'>
+                        <img class="img-fluid" style='max-width: 100px' src="\logos\css.webp" alt="CSS">
+                    </div>
+
+                    <div class='skillIcon'>
+                        <img class="img-fluid" style='max-width: 100px' src="\logos\jquery.webp" alt="JQ">
+                    </div>
+
+                    <div class='skillIcon'>
+                        <img class="img-fluid" style='max-width: 100px' src="\logos\bootstrap.png" alt="BS">
+                    </div>
+
+                </div>
+
+                <div class='skillRow'>
+                    <div class='skillIcon'>
+                        <img class="img-fluid" style='max-height: 100px' src="\logos\php.webp" alt="PHP">
+                    </div>
+
+                    <div class='skillIcon'>
+                        <img class="img-fluid" style='max-width: 120px' src="\logos\mysql.svg" alt="MYSQL">
+                    </div>
+
+                    <div class='skillIcon'>
+                        <img class="img-fluid" style='max-height: 100px' src="\logos\aws.png" alt="AWS">
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--FOOTER-->
+
+    <footer>
+        <div id='footerDiv'>
+            <h1> View all my profiles </h1>
+
+            <a href='https://github.com/ediesportlond?tab=repositories' target="_blank">
+                <img style='max-width : 25px' src="\logos\github.png" alt='GitHub'>
+            </a>
+
+            <a href='https://leetcode.com/ediesportlond/' target="_blank">
+                <img style='max-width : 25px' src="\logos\leetcode.png" alt='LeetCode'>
+            </a>
+
+            <a href='https://www.linkedin.com/in/eddie-espinosa-15038a5a' target="_blank">
+                <img style='max-width : 25px' src="\logos\linkedin.png" alt='LinkedIn'>
+            </a>
+            <br>
+            <p>
+                <a href='tel:7863403818'>(786) 340-3818</a>
+                <br>
+                <a href='mailto:espinosa.edilson@gmail.com'>espinosa.edilson@gmail.com</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+
+    <!-- CUSTOM SCRIPT -->
+    <script src="app.js"></script>
+</body>
+
+</html>
