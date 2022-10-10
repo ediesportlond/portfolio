@@ -27,7 +27,7 @@
                             <option></option>
                             <option value='Apply Later'>Apply Later</option>
                             <option value='Applied'>Applied</option>
-                            <option value='Applied'>Ghosted</option>
+                            <option value='Ghosted'>Ghosted</option>
                             <option value='Rejected'>Rejected</option>
                             <option value='Withdrew'>Withdrew</option>
                             <option value='First Contact'>First Contact</option>

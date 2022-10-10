@@ -88,7 +88,7 @@ $('#submitApp').on('click', function(e){
             '<td>'+site+'</td>';
         
         resumeVers = formData.resumeVers;
-        console.log(resumeVers);
+
         if(resumeVers !== 'none' && resumeVers !== ''){
             updateRow += '<td>Version '+resumeVers+'</td>';
         } else {
