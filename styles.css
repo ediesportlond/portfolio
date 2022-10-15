@@ -1,7 +1,16 @@
 body {
         height: 100%;
-        background-color: #e3e3e3
+        background-color: #f2f2f2 
 }
+
+.hero-image {
+        background-image: url("./img/white-bg.jpg"); /* The image used */
+        background-color: #cccccc; /* Used if the image is unavailable */
+        height: 650px; /* You must set a specified height */
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat; /* Do not repeat the image */
+        background-size: cover; /* Resize the background image to cover the entire container */
+      }
 
 .banner {
         position: absolute;
@@ -14,10 +23,12 @@ body {
 
 #jobTitle {
         font-size: 5vw;
+        color:rgb(65, 65, 65);
 }
 
 #jobFunctions {
         font-size: 4vw;
+        color:rgb(65, 65, 65);
 }
 
 .fadeRight {

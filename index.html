@@ -18,18 +18,17 @@
 
     <!-- NAVIGATION BAR-->
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Eddie</a>
+            <a class="navbar-brand" href="#">
+                <img src="\img\face-icon.jpg" alt="" width="35" height="35" style="border-radius:100%">
+                </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#aboutMe">About Me</a>
                     </li>
@@ -44,19 +43,22 @@
         </div>
     </nav>
 
-    <!-- BACKGROUND VIDEO 1-->
+    <!--HERO-->
+    <div class="hero-image mb-5"></div>
 
-    <video class='img-fluid mb-5' autoplay muted loop>
+    <!-- BACKGROUND VIDEO 1-->
+    <!-- <video class='img-fluid mb-5' autoplay muted loop>
         <source src='\img\Comp_8.mp4' type='video/mp4'>
-    </video>
+    </video> -->
 
     <!--BANNER-->
     <div class='banner'>
-        <h1 id='jobTitle'>Software Engineer</h1>
-        <div id='jobFunctions'>
-            <marquee direction="scroll" style='width: 33%'>Full Stack - Cloud Architecture - Front End - Version Control
+        <h1 id='jobTitle'>Hello, World! I'm Eddie.</h1>
+        <div id='jobFunctions' class="text-center">
+            <marquee direction="scroll" style='width: 33%;'>Software Engineer - Full Stack - Cloud Architecture - Front End - Version Control
                 - Back End</marquee>
         </div>
+        <a href='#cards'><button class="btn btn-primary btn-lg">View My Projects</button></a>
     </div>
     <!--ABOUT ME-->
     <div class="row fadeRight centerCards mb-5" id="0">

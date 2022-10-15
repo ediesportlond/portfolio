@@ -4,7 +4,7 @@ function centerJobTitle() {
 	let navHeight = $('nav').css('height');
 	navHeight = parseInt(navHeight.replace(/px/g, ''));
 
-	let vidHeight = $('video').css('height');
+	let vidHeight = $('.hero-image').css('height');
 	vidHeight = parseInt(vidHeight.replace(/px/g, ''));
 
 	let titleHeight = $('#jobTitle').css('height');
