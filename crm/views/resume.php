@@ -20,7 +20,7 @@
     <form action="?page=resume" method="post" enctype="multipart/form-data">
         <input class='form-control form-width' type='file' name='resume'>
         <br>
-        <textarea class='form-control form-width' name='notes' placeholder='Add notes regarding this version. What changes did you make?'></textarea>
+        <textarea class='form-control form-width' name='notes' placeholder='Give your resume a descriptive name.'></textarea>
         <br>
         <input class='btn btn-primary' type='submit'>
     </form>

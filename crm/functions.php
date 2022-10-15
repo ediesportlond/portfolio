@@ -239,8 +239,10 @@
                 $resumeVersion = $result[$i]['resume'];
                 
                 if($resumeVersion != 'none' && $resumeVersion != ''){
-                    $location = getResumeLocation($conn, $resumeVersion)['location'];
-                    echo '<td><a href="'.$location.'" target="_blank" style="text-decoration: none">Version '.$resumeVersion.'</a></td>';
+                    $resumeResults = getResumeLocation($conn, $resumeVersion);
+                    $location = $resumeResults['location'];
+                    $resumeNotes = $resumeResults['notes'];
+                    echo '<td><a href="'.$location.'" target="_blank" style="text-decoration: none">V'.$resumeVersion.' '.$resumeNotes.'</a></td>';
                 } else {
                     echo '<td>'.$resumeVersion.'</td>';
                 }
@@ -403,8 +405,10 @@
                 $resumeVersion = $result[$i]['resume'];
                 
                 if($resumeVersion != 'none' && $resumeVersion != ''){
-                    $location = getResumeLocation($conn, $resumeVersion)['location'];
-                    echo '<td><a href="'.$location.'" target="_blank" style="text-decoration: none">Version '.$resumeVersion.'</a></td>';
+                    $resumeResults = getResumeLocation($conn, $resumeVersion);
+                    $location = $resumeResults['location'];
+                    $resumeNotes = $resumeResults['notes'];
+                    echo '<td><a href="'.$location.'" target="_blank" style="text-decoration: none">V'.$resumeVersion.' '.$resumeNotes.'</a></td>';
                 } else {
                     echo '<td>'.$resumeVersion.'</td>';
                 }
@@ -442,7 +446,7 @@
 //RESUME FUNCTIONS
 
     function versionID($conn, $userID, $all){
-        $sql = "SELECT `version id` FROM `resume` WHERE `user id` = ".$userID." ORDER BY `version id` DESC";
+        $sql = "SELECT `version id`, `notes` FROM `resume` WHERE `user id` = ".$userID." ORDER BY `version id` DESC";
         
         if($all){
             $result = mysqli_query($conn, $sql);
@@ -508,13 +512,14 @@
         } else {
             for($i = 0; $i < sizeof($result); $i++){
                 $vID = $result[$i]['version id'];
-                echo '<option value="'.$vID.'">Version '.$vID.'</option>';
+                $notes = $result[$i]['notes'];
+                echo '<option value="'.$vID.'">Version '.$vID.' '.$notes.'</option>';
             }
         }
     }
     
     function getResumeLocation($conn, $vID){
-        $sql = "SELECT `location` FROM `resume` WHERE `user id` = ".$_SESSION['id']." AND `version id` = ".$vID;
+        $sql = "SELECT `location`, `notes` FROM `resume` WHERE `user id` = ".$_SESSION['id']." AND `version id` = ".$vID;
 
         $result = mysqli_query($conn, $sql);
         $result = mysqli_fetch_assoc($result);
