@@ -184,7 +184,7 @@ $('tr').on('click', function(){
 
     if(resume !== '' && resume != 'none'){
         //removes html
-        resume = formData[7].match(/version\s\d+/i)[0].replace(/version\s/i, '');
+        resume = formData[7].match(/V\d+/)[0].replace(/V/, '');
     }
     
     $('[name=resumeVers]').val(resume);
