@@ -1,17 +1,17 @@
 body {
         height: 100%;
-        background-color: #f2f2f2 
+        background-color: #f2f2f2
 }
 
 .hero-image {
-        background-image: url("./img/white-bg.jpg"); /* The image used */
+        background-image: url("http://itseddies.com/img/white-bg.jpg"); /* The image used */
         background-color: #cccccc; /* Used if the image is unavailable */
         height: 650px; /* You must set a specified height */
         background-position: center; /* Center the image */
         background-repeat: no-repeat; /* Do not repeat the image */
         background-size: cover; /* Resize the background image to cover the entire container */
       }
-
+      
 .banner {
         position: absolute;
         width: 100%;
@@ -69,7 +69,7 @@ body {
 }
 
 #canvasImg {
-        background-image: url("\skills_bg.png");
+        background-image: url("http://itseddies.com/img/white-bg.jpg");
         background-size: cover;
 }
 
@@ -113,7 +113,7 @@ iframe {
 }
 
 footer {
-        background-color: #212529;
+        background-color: rgb(65, 65, 65);
         color: white;
         text-align: center;
         height: 225px;

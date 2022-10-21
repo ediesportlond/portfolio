@@ -22,7 +22,7 @@
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <img src="\img\face-icon.jpg" alt="" width="35" height="35" style="border-radius:100%">
-                </a>
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -45,21 +45,22 @@
 
     <!--HERO-->
     <div class="hero-image mb-5"></div>
-
     <!-- BACKGROUND VIDEO 1-->
-    <!-- <video class='img-fluid mb-5' autoplay muted loop>
+    <!--<video class='img-fluid mb-5' autoplay muted loop>
         <source src='\img\Comp_8.mp4' type='video/mp4'>
-    </video> -->
+    </video>-->
 
     <!--BANNER-->
     <div class='banner'>
         <h1 id='jobTitle'>Hello, World! I'm Eddie.</h1>
-        <div id='jobFunctions' class="text-center">
-            <marquee direction="scroll" style='width: 33%;'>Software Engineer - Full Stack - Cloud Architecture - Front End - Version Control
+        <div id='jobFunctions'>
+            <marquee direction="scroll" style='width: 33%'>Software Engineer - Full Stack - Cloud Architecture - Front
+                End - Version Control
                 - Back End</marquee>
         </div>
         <a href='#cards'><button class="btn btn-primary btn-lg">View My Projects</button></a>
     </div>
+    <hr class="featurette-divider">
     <!--ABOUT ME-->
     <div class="row fadeRight centerCards mb-5" id="0">
         <div class="col-lg-8">
@@ -109,7 +110,7 @@
             </div>
 
             <div class="text-center fadeUp cards">
-                <img src="\img\bbc.png" style="; max-width: 250px">
+                <img src="\img\bbc.png" style="max-width: 250px">
                 <h3 class='card-link'>News Clone</h3>
                 <button id='bbcLink' class='btn btn-outline-secondary btn-sm'>Demo</button>
                 <p>Clone of BBC site to showcase CSS dexterity. An early project of mine.</p>
@@ -138,60 +139,58 @@
     <button id='close' type="button" class="btn-close btn-close-white" aria-label="Close"></button>
     <iframe src="" height="500" width="600" title="Portfolio Page" style='display: none'></iframe>
 
+    <hr class="featurette-divider fadeLeft">
     <!--SKILLS-->
 
     <div class="fadeLeft" id="2">
         <div id='canvasImg'>
-            <div id='skillCanvas'>
 
-                <!--SKILLS TITLE-->
+            <!--SKILLS TITLE-->
+            <div>
                 <div>
-                    <div>
-                        <h1 class="fadeLeft display-3" style='text-align:center'>Skills</h1>
-                    </div>
+                    <h1 class="fadeLeft display-6" style='text-align:center'>Skills</h1>
+                </div>
+            </div>
+
+            <!--LOGOS-->
+            <div class='skillRow'>
+                <div class='skillIcon'>
+                    <img class="img-fluid" style='max-width: 100px' src="\logos\git.png" alt="GIT">
                 </div>
 
-                <!--LOGOS-->
-                <div class='skillRow'>
-                    <div class='skillIcon'>
-                        <img class="img-fluid" style='max-width: 100px' src="\logos\git.png" alt="GIT">
-                    </div>
-
-                    <div class='skillIcon'>
-                        <img class="img-fluid" style='max-height: 95px' src="\logos\javascript.svg" alt="JS">
-                    </div>
-
-                    <div class='skillIcon'>
-                        <img class="img-fluid" style='max-height: 100px' src="\logos\html.svg" alt="HTML">
-                    </div>
-
-                    <div class='skillIcon'>
-                        <img class="img-fluid" style='max-width: 100px' src="\logos\css.webp" alt="CSS">
-                    </div>
-
-                    <div class='skillIcon'>
-                        <img class="img-fluid" style='max-width: 100px' src="\logos\jquery.webp" alt="JQ">
-                    </div>
-
-                    <div class='skillIcon'>
-                        <img class="img-fluid" style='max-width: 100px' src="\logos\bootstrap.png" alt="BS">
-                    </div>
-
+                <div class='skillIcon'>
+                    <img class="img-fluid" style='max-height: 95px' src="\logos\javascript.svg" alt="JS">
                 </div>
 
-                <div class='skillRow'>
-                    <div class='skillIcon'>
-                        <img class="img-fluid" style='max-height: 100px' src="\logos\php.webp" alt="PHP">
-                    </div>
+                <div class='skillIcon'>
+                    <img class="img-fluid" style='max-height: 100px' src="\logos\html.svg" alt="HTML">
+                </div>
 
-                    <div class='skillIcon'>
-                        <img class="img-fluid" style='max-width: 120px' src="\logos\mysql.svg" alt="MYSQL">
-                    </div>
+                <div class='skillIcon'>
+                    <img class="img-fluid" style='max-width: 100px' src="\logos\css.webp" alt="CSS">
+                </div>
 
-                    <div class='skillIcon'>
-                        <img class="img-fluid" style='max-height: 100px' src="\logos\aws.png" alt="AWS">
-                    </div>
+                <div class='skillIcon'>
+                    <img class="img-fluid" style='max-width: 100px' src="\logos\jquery.webp" alt="JQ">
+                </div>
 
+                <div class='skillIcon'>
+                    <img class="img-fluid" style='max-width: 100px' src="\logos\bootstrap.png" alt="BS">
+                </div>
+
+            </div>
+
+            <div class='skillRow'>
+                <div class='skillIcon'>
+                    <img class="img-fluid" style='max-height: 100px' src="\logos\php.webp" alt="PHP">
+                </div>
+
+                <div class='skillIcon'>
+                    <img class="img-fluid" style='max-width: 120px' src="\logos\mysql.svg" alt="MYSQL">
+                </div>
+
+                <div class='skillIcon'>
+                    <img class="img-fluid" style='max-height: 100px' src="\logos\aws.png" alt="AWS">
                 </div>
 
             </div>
@@ -201,25 +200,30 @@
 
     <footer>
         <div id='footerDiv'>
-            <h1> View all my profiles </h1>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Contact Info</h3>
+                    <p>
+                        <a href='tel:7863403818'>(786) 340-3818</a>
+                        <br>
+                        <a href='mailto:espinosa.edilson@gmail.com'>espinosa.edilson@gmail.com</a>
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <h3>Social</h3>
+                    <a href='https://github.com/ediesportlond?tab=repositories' target="_blank">
+                        <img style='max-width : 25px' src="\logos\github.png" alt='GitHub'>
+                    </a>
 
-            <a href='https://github.com/ediesportlond?tab=repositories' target="_blank">
-                <img style='max-width : 25px' src="\logos\github.png" alt='GitHub'>
-            </a>
+                    <a href='https://leetcode.com/ediesportlond/' target="_blank">
+                        <img style='max-width : 25px' src="\logos\leetcode.png" alt='LeetCode'>
+                    </a>
 
-            <a href='https://leetcode.com/ediesportlond/' target="_blank">
-                <img style='max-width : 25px' src="\logos\leetcode.png" alt='LeetCode'>
-            </a>
-
-            <a href='https://www.linkedin.com/in/eddie-espinosa-15038a5a' target="_blank">
-                <img style='max-width : 25px' src="\logos\linkedin.png" alt='LinkedIn'>
-            </a>
-            <br>
-            <p>
-                <a href='tel:7863403818'>(786) 340-3818</a>
-                <br>
-                <a href='mailto:espinosa.edilson@gmail.com'>espinosa.edilson@gmail.com</a>
-            </p>
+                    <a href='https://www.linkedin.com/in/eddie-espinosa-15038a5a' target="_blank">
+                        <img style='max-width : 25px' src="\logos\linkedin.png" alt='LinkedIn'>
+                    </a>
+                </div>
+            </div>
         </div>
     </footer>
 
