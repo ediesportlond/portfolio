@@ -4,13 +4,13 @@ function centerJobTitle() {
 	let navHeight = $('nav').css('height');
 	navHeight = parseInt(navHeight.replace(/px/g, ''));
 
-	let vidHeight = $('.hero-image').css('height');
-	vidHeight = parseInt(vidHeight.replace(/px/g, ''));
+	let heroHeight = $('.hero-image').css('height');
+	heroHeight = parseInt(heroHeight.replace(/px/g, ''));
 
 	let titleHeight = $('#jobTitle').css('height');
 	titleHeight = parseInt(titleHeight.replace(/px/g, ''));
 
-	const adjustment = (navHeight + vidHeight) / 2 - titleHeight / 2;
+	const adjustment = (navHeight + heroHeight) / 2 - titleHeight / 2;
 
 	$('.banner').css({ top: adjustment, opacity: 1 });
 }
@@ -31,9 +31,9 @@ $(window).on('scroll', function () {
 
 $(window).on('scroll', function () {
 	const y_scroll_pos = window.pageYOffset;
-	const targetDiv = document.getElementById("0").offsetTop - 500;
+	const targetDiv = document.getElementById("aboutMe").offsetTop - 500;
 	if (y_scroll_pos > targetDiv) {
-		$("#0").animate({ left: '0px', opacity: "1" }, 2000);
+		$("#aboutMe").animate({ left: '0px', opacity: "1" }, 2000);
 	}
 });
 
