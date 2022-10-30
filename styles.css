@@ -4,14 +4,14 @@ body {
 }
 
 .hero-image {
-        background-image: url("http://itseddies.com/img/white-bg.jpg"); /* The image used */
-        background-color: #cccccc; /* Used if the image is unavailable */
-        height: 650px; /* You must set a specified height */
-        background-position: center; /* Center the image */
-        background-repeat: no-repeat; /* Do not repeat the image */
-        background-size: cover; /* Resize the background image to cover the entire container */
-      }
-      
+        background-image: url("http://itseddies.com/img/white-bg.jpg");
+        background-color: #cccccc;
+        height: 650px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+
 .banner {
         position: absolute;
         width: 100%;
@@ -23,12 +23,12 @@ body {
 
 #jobTitle {
         font-size: 5vw;
-        color:rgb(65, 65, 65);
+        color: rgb(65, 65, 65);
 }
 
 #jobFunctions {
         font-size: 4vw;
-        color:rgb(65, 65, 65);
+        color: rgb(65, 65, 65);
 }
 
 .fadeRight {
@@ -59,13 +59,30 @@ body {
 }
 
 .cards {
-        border: 2px solid gray;
+        border: 1px solid lightgray;
         margin: 12px;
         padding: 20px;
         width: 301px;
         border-radius: 0% 25px;
         float: left;
-        box-shadow: 2px 2px 4px 0px gray;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+content>div>div.card>a {
+        text-decoration: none;
+        color: #414141;
+        font-weight: bold;
+        font-size: 1.25rem;
+}
+
+content>div>div.card>a>div>small {
+        color: rgba(0, 0, 0, .55);
+        font-size: 0.8rem;
+}
+
+content>div>div.card>a>img {
+        object-fit: cover;
+        height: 35vh;
 }
 
 #canvasImg {

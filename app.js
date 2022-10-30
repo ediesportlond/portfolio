@@ -39,7 +39,7 @@ $(window).on('scroll', function () {
 
 $(window).on('scroll', function () {
 	const y_scroll_pos = window.pageYOffset;
-	const targetDivB = document.getElementById("2").offsetTop - 750;
+	const targetDivB = document.getElementById("skills").offsetTop - 750;
 	if (y_scroll_pos > targetDivB) {
 		$(".fadeLeft").animate({ left: "0px", opacity: "1" }, 2000);
 	}

@@ -3,9 +3,9 @@
     Needs to be updated when site is migrated.*/
 
     $servername = "localhost";
-    $username = "";
-    $password = "";
-    $dbname = "";
+    $username = "itseddie_admin";
+    $password = ".)sgw%;jJPIp";
+    $dbname = "itseddie_main";
 
     // Create connection
     $conn = mysqli_connect($servername, $username, $password, $dbname);

@@ -36,7 +36,10 @@
                         <a class="nav-link" href="#cards">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#2">Skills</a>
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blog">Blog</a>
                     </li>
                 </ul>
             </div>
@@ -51,7 +54,7 @@
     </video>-->
 
     <!--BANNER-->
-    <div class='banner'>
+    <section class='banner'>
         <h1 id='jobTitle'>Hello, World! I'm Eddie.</h1>
         <div id='jobFunctions'>
             <marquee direction="scroll" style='width: 33%'>Software Engineer - Full Stack - Cloud Architecture - Front
@@ -59,7 +62,7 @@
                 - Back End</marquee>
         </div>
         <a href='#cards'><button class="btn btn-primary btn-lg">View My Projects</button></a>
-    </div>
+    </section>
     <hr class="featurette-divider">
     <!--ABOUT ME-->
     <content class="row fadeRight centerCards mb-5" id="aboutMe">
@@ -84,8 +87,8 @@
         </div>
     </content>
     <hr class="featurette-divider">
-    <!-- CARDS-->
-    <div>
+    <!-- PROJECT CARDS-->
+    <content>
         <h1 class='fadeUp display-6' id='cards' style='text-align:center; margin-bottom: 15px'>Projects</h1>
         <div class='centerCards'>
 
@@ -132,17 +135,18 @@
                     JavaScript projects.</p>
             </div>
         </div>
-    </div>
+    </content>
 
     <!--COVER-->
     <div id='cover'></div>
     <button id='close' type="button" class="btn-close btn-close-white" aria-label="Close"></button>
     <iframe src="" height="500" width="600" title="Portfolio Page" style='display: none'></iframe>
 
-    <hr class="featurette-divider fadeLeft">
+    <hr class="featurette-divider">
+
     <!--SKILLS-->
 
-    <div class="fadeLeft" id="2">
+    <section class="fadeLeft" id="skills">
         <div id='canvasImg'>
 
             <!--SKILLS TITLE-->
@@ -207,7 +211,29 @@
 
             </div>
         </div>
+    </section>
+    <hr class="featurette-divider">
+    <div class="container">
+        <content class="row justify-content-center text-center mb-4 fadeUp" id="blog">
+            <h3 class="display-6">Blog</h3>
+            <div class="col-md-4">
+                <div class="card text-start" >
+                    <a
+                        href="https://medium.com/@espinosa.edilson/solving-a-sudoku-puzzle-with-javascript-using-hash-maps-and-recursions-cdc5b12e10ce">
+                        <img src="https://miro.medium.com/max/1400/0*73uz40OhqjNptnp1" class="card-img-top"
+                            alt="Winding staircase">
+                        <div class="card-body">
+                            <p class="card-text">
+                                Solving a Sudoku puzzle with JavaScript using hash maps and recursions
+                            </p>
+                            <small>10-30-2022</small>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </content>
     </div>
+
     <!--FOOTER-->
 
     <footer>
