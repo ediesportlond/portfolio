@@ -83,7 +83,7 @@ $('#portLink').on('click', function () {
 
 $('#albumApp').on('click', function () {
 	screenCover();
-	$('iframe').show().attr('src', 'https://albums-react-ee.web.app/');
+	$('iframe').show().attr('src', 'https://albums2-routes-ee.web.app');
 });
 
 $('#reactionLink').on('click', function () {

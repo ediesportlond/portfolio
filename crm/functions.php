@@ -530,7 +530,7 @@
 //FUNCTIONS FOR HOME
 
     function weeksAppointments($conn){
-        $sql = "SELECT `appointment`, `company` FROM `Applications` WHERE `appointment` > CURDATE() AND `appointment` != '0000-00-00'AND `user_id` = ".$_SESSION['id']." ORDER BY `appointment` ASC";
+        $sql = "SELECT `appointment`, `company` FROM `Applications` WHERE `appointment` >= CURDATE() AND `appointment` != '0000-00-00'AND `user_id` = ".$_SESSION['id']." ORDER BY `appointment` ASC";
         
         $result = mysqli_query($conn, $sql);
         $result =mysqli_fetch_all($result, MYSQLI_ASSOC);
