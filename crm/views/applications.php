@@ -163,11 +163,12 @@
                     <div class='col-sm-9'>
                         <select class='form-select' name='source'>
                             <option></option>
-                            <option value='Indeed'>Indeed</option>
                             <option value='LinkedIn'>LinkedIn</option>
+                            <option value='Angel.co'>Angel.co</option>
+                            <option value='Dice'>Dice</option>
+                            <option value='Indeed'>Indeed</option>
                             <option value='Career Builder'>Career Builder</option>
                             <option value='Glassdoor'>Glassdoor</option>
-                            <option value='Dice'>Dice</option>
                             <option value='Zip Recruiter'>Zip Recruiter</option>
                             <option value='Career Page'>Career Page</option>
                             <option value='Referral'>Referral</option>
