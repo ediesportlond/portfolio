@@ -48,9 +48,14 @@ function screenUncover() {
 	$('#close').hide();
 }
 
+$('#invLink').on('click', function () {
+	screenCover();
+	$('iframe').show().attr('src', 'http://inventory-project-ee.s3-website-us-east-1.amazonaws.com/');
+});
+
 $('#crmLink').on('click', function () {
 	screenCover();
-	$('iframe').show().attr('src', 'http://itseddies.com/crm');
+	$('iframe').show().attr('src', 'https://itseddies.com/crm');
 });
 
 $('#portLink').on('click', function () {
