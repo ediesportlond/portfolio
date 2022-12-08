@@ -1,26 +1,3 @@
-function centerJobTitle() {
-	//Centers 'software engineer' on video. 
-
-	let navHeight = $('nav').css('height');
-	navHeight = parseInt(navHeight.replace(/px/g, ''));
-
-	let heroHeight = $('.hero-image').css('height');
-	heroHeight = parseInt(heroHeight.replace(/px/g, ''));
-
-	let titleHeight = $('#jobTitle').css('height');
-	titleHeight = parseInt(titleHeight.replace(/px/g, ''));
-
-	const adjustment = (navHeight + heroHeight) / 2 - titleHeight / 2;
-
-	$('.banner').css({ top: adjustment, opacity: 1 });
-}
-
-$(window).on('load', centerJobTitle);
-
-$(window).on('scroll', centerJobTitle);
-
-$(window).resize(centerJobTitle);
-
 $(window).on('scroll', function () {
 	const y_scroll_pos = window.pageYOffset;
 	const targetDiv = document.getElementById("cards").offsetTop - 500;
