@@ -2,10 +2,10 @@
     /*checkOTP and changePass contain site URL
     Needs to be updated when site is migrated.*/
 
-    $servername = "localhost";
-    $username = "itseddie_admin";
-    $password = ".)sgw%;jJPIp";
-    $dbname = "itseddie_main";
+    $servername = "";
+    $username = "";
+    $password = "";
+    $dbname = "";
 
     // Create connection
     $conn = mysqli_connect($servername, $username, $password, $dbname);
