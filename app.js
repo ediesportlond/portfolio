@@ -63,11 +63,6 @@ $('#portLink').on('click', function () {
 	$('iframe').show().attr('src', '\\index.html');
 });
 
-$('#albumApp').on('click', function () {
-	screenCover();
-	$('iframe').show().attr('src', 'https://albums2-routes-ee.web.app');
-});
-
 $('#reactionLink').on('click', function () {
 	screenCover();
 	$('iframe').show().attr('src', "\\reaction-timer\\index.html");
