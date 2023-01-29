@@ -87,3 +87,9 @@ $('#close').on('click', function () {
 	screenUncover();
 	$('iframe').hide();
 });
+
+const resizeTitle = () => {
+	$(".card-text")[1].style.height = window.getComputedStyle($(".card-text")[0]).getPropertyValue("height");
+}
+
+document.onload(resizeTitle())
